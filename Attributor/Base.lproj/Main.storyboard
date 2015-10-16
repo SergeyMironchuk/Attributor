@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Attributor View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="AttributorViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vqc-OJ-etr">
+                                <rect key="frame" x="88" y="488" width="64" height="64"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="64" id="ewK-ME-REG"/>
+                                    <constraint firstAttribute="height" constant="64" id="t17-FO-CkD"/>
+                                </constraints>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=compact-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="393" y="278" width="30" height="64"/>
+                                </variation>
+                                <connections>
+                                    <action selector="changeBodySelectionColorToMatchBackgroundOfButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vQD-fq-vIa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dSb-56-73v">
+                                <rect key="frame" x="462" y="560" width="122" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="122" id="vDx-xo-hB5"/>
+                                </constraints>
+                                <state key="normal" title="Unoutline">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=compact-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="262" y="350" width="122" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="unoutlineBodySelection" destination="BYZ-38-t0r" eventType="touchUpInside" id="rSa-Kc-8er"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GyO-1j-sFi">
+                                <rect key="frame" x="16" y="560" width="50" height="20"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Outline">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=compact-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="16" y="350" width="49" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="outLineBodySelection" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pea-rR-8XW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UCi-C6-UXA">
+                                <rect key="frame" x="16" y="488" width="64" height="64"/>
+                                <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="3kk-pb-s5F"/>
+                                    <constraint firstAttribute="width" constant="64" id="WeY-6b-hbd"/>
+                                </constraints>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=compact-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="16" y="278" width="369" height="64"/>
+                                </variation>
+                                <connections>
+                                    <action selector="changeBodySelectionColorToMatchBackgroundOfButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NEb-hu-Va2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N2W-OQ-yqL">
+                                <rect key="frame" x="232" y="488" width="64" height="64"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="BhA-DY-OOg"/>
+                                    <constraint firstAttribute="width" constant="64" id="RiX-i2-AVL"/>
+                                </constraints>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=compact-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="16" y="278" width="369" height="64"/>
+                                </variation>
+                                <connections>
+                                    <action selector="changeBodySelectionColorToMatchBackgroundOfButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gA2-Vi-w5h"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="noI-4G-fNS">
+                                <rect key="frame" x="160" y="488" width="64" height="64"/>
+                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="64" id="S1M-Y6-hRv"/>
+                                    <constraint firstAttribute="height" constant="64" id="kVY-hS-8f3"/>
+                                </constraints>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=compact-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="-22" y="278" width="30" height="64"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="-56" y="688" width="64" height="64"/>
+                                </variation>
+                                <connections>
+                                    <action selector="changeBodySelectionColorToMatchBackgroundOfButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i3d-G5-krd"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CS193p Rocks!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TAv-d3-jjd">
+                                <rect key="frame" x="232" y="20" width="144" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="144" id="aXC-Uu-Ggf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=compact-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="129" y="0.0" width="144" height="20"/>
+                                </variation>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mD7-US-3wK">
+                                <rect key="frame" x="16" y="59" width="568" height="421"/>
+                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="heightClass=compact-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="16" y="37" width="368" height="233"/>
+                                </variation>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Vqc-OJ-etr" firstAttribute="top" secondItem="mD7-US-3wK" secondAttribute="bottom" constant="8" id="1Sq-pl-4Ux"/>
+                            <constraint firstAttribute="centerX" secondItem="TAv-d3-jjd" secondAttribute="centerX" constant="-4" id="2aI-Al-wfi"/>
+                            <constraint firstItem="dSb-56-73v" firstAttribute="trailing" secondItem="mD7-US-3wK" secondAttribute="trailing" id="40G-ei-OUd"/>
+                            <constraint firstItem="N2W-OQ-yqL" firstAttribute="leading" secondItem="noI-4G-fNS" secondAttribute="trailing" constant="8" id="4mY-uS-71X"/>
+                            <constraint firstItem="mD7-US-3wK" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="89i-lJ-Kxz"/>
+                            <constraint firstItem="Vqc-OJ-etr" firstAttribute="leading" secondItem="UCi-C6-UXA" secondAttribute="trailing" constant="8" id="9HV-5l-ArB"/>
+                            <constraint firstItem="TAv-d3-jjd" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Bwr-4a-CX3"/>
+                            <constraint firstItem="dSb-56-73v" firstAttribute="top" secondItem="mD7-US-3wK" secondAttribute="bottom" constant="80" id="CfM-iL-1X9"/>
+                            <constraint firstItem="mD7-US-3wK" firstAttribute="top" secondItem="TAv-d3-jjd" secondAttribute="bottom" constant="19" id="Ezg-ix-MWs"/>
+                            <constraint firstItem="GyO-1j-sFi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="INO-bu-l6R"/>
+                            <constraint firstItem="TAv-d3-jjd" firstAttribute="centerX" secondItem="N2W-OQ-yqL" secondAttribute="centerX" id="PAR-GS-Y6z"/>
+                            <constraint firstItem="TAv-d3-jjd" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-9" id="Poj-zV-8eg"/>
+                            <constraint firstItem="mD7-US-3wK" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="39" id="QuV-VM-tmr"/>
+                            <constraint firstItem="noI-4G-fNS" firstAttribute="top" secondItem="mD7-US-3wK" secondAttribute="bottom" constant="8" id="RK7-qK-JSo"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="GyO-1j-sFi" secondAttribute="bottom" constant="20" id="XVN-CL-GPm"/>
+                            <constraint firstItem="dSb-56-73v" firstAttribute="baseline" secondItem="GyO-1j-sFi" secondAttribute="firstBaseline" id="aac-mi-Pje"/>
+                            <constraint firstItem="mD7-US-3wK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="crr-VK-5bR"/>
+                            <constraint firstItem="noI-4G-fNS" firstAttribute="leading" secondItem="Vqc-OJ-etr" secondAttribute="trailing" constant="8" id="isn-1O-WAP"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="mD7-US-3wK" secondAttribute="bottom" constant="120" id="l25-Ww-kEj"/>
+                            <constraint firstItem="dSb-56-73v" firstAttribute="firstBaseline" secondItem="GyO-1j-sFi" secondAttribute="baseline" id="lyg-qU-aKo"/>
+                            <constraint firstItem="N2W-OQ-yqL" firstAttribute="top" secondItem="mD7-US-3wK" secondAttribute="bottom" constant="8" id="nxq-mH-yNX"/>
+                            <constraint firstItem="dSb-56-73v" firstAttribute="top" secondItem="GyO-1j-sFi" secondAttribute="top" id="qG9-Ov-vXe"/>
+                            <constraint firstItem="UCi-C6-UXA" firstAttribute="top" secondItem="mD7-US-3wK" secondAttribute="bottom" constant="8" id="ra1-aJ-YeX"/>
+                            <constraint firstItem="UCi-C6-UXA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="uDx-yY-4mX"/>
+                            <constraint firstItem="TAv-d3-jjd" firstAttribute="leading" secondItem="N2W-OQ-yqL" secondAttribute="leading" id="xh3-ZQ-mVR"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Bwr-4a-CX3"/>
+                                <exclude reference="PAR-GS-Y6z"/>
+                                <exclude reference="Poj-zV-8eg"/>
+                                <exclude reference="xh3-ZQ-mVR"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="body" destination="mD7-US-3wK" id="8pX-cr-euF"/>
+                        <outlet property="headLine" destination="TAv-d3-jjd" id="Oof-fb-SMQ"/>
+                        <outlet property="outlineButton" destination="GyO-1j-sFi" id="y1Q-fn-1TS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="285" y="430"/>
+        </scene>
+    </scenes>
+</document>
