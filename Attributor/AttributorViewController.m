@@ -7,6 +7,7 @@
 //
 
 #import "AttributorViewController.h"
+#import "TextStatsViewController.h"
 
 @interface AttributorViewController ()
 @property (weak, nonatomic) IBOutlet UITextView *body;
@@ -31,6 +32,16 @@
 - (IBAction)unoutlineBodySelection {
     [self.body.textStorage removeAttribute:NSStrokeWidthAttributeName
                                      range:self.body.selectedRange];
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"Analyze Text"]) {
+        if ([segue.destinationViewController isKindOfClass:[TextStatsViewController class] ]) {
+            TextStatsViewController *tvc = (TextStatsViewController *)segue.destinationViewController;
+            tvc.textToAnalyze = self.body.textStorage;
+        }
+    }
 }
 
 - (void)viewDidLoad {

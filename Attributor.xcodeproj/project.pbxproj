@@ -14,6 +14,7 @@
 		842301E61BCFB83B00930586 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 842301E51BCFB83B00930586 /* Images.xcassets */; };
 		842301E91BCFB83C00930586 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 842301E71BCFB83C00930586 /* LaunchScreen.xib */; };
 		842301F51BCFB83D00930586 /* AttributorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 842301F41BCFB83D00930586 /* AttributorTests.m */; };
+		84C352241BD61491005696C8 /* TextStatsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C352231BD61491005696C8 /* TextStatsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		842301EE1BCFB83C00930586 /* AttributorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AttributorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		842301F31BCFB83D00930586 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		842301F41BCFB83D00930586 /* AttributorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AttributorTests.m; sourceTree = "<group>"; };
+		84C352221BD61491005696C8 /* TextStatsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextStatsViewController.h; sourceTree = "<group>"; };
+		84C352231BD61491005696C8 /* TextStatsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextStatsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +89,8 @@
 				842301DF1BCFB83B00930586 /* AttributorViewController.h */,
 				842301E01BCFB83B00930586 /* AttributorViewController.m */,
 				842301E21BCFB83B00930586 /* Main.storyboard */,
+				84C352221BD61491005696C8 /* TextStatsViewController.h */,
+				84C352231BD61491005696C8 /* TextStatsViewController.m */,
 				842301E51BCFB83B00930586 /* Images.xcassets */,
 				842301E71BCFB83C00930586 /* LaunchScreen.xib */,
 				842301D81BCFB83A00930586 /* Supporting Files */,
@@ -222,6 +227,7 @@
 				842301E11BCFB83B00930586 /* AttributorViewController.m in Sources */,
 				842301DE1BCFB83B00930586 /* AppDelegate.m in Sources */,
 				842301DB1BCFB83B00930586 /* main.m in Sources */,
+				84C352241BD61491005696C8 /* TextStatsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
